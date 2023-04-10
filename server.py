@@ -11,7 +11,7 @@ def success():
     return render_template('index.html')
 
 
-@app.route('/submit', methods=["GET", "POST"])
+@app.route('/result', methods=["GET", "POST"])
 def process_submission():
     session['name'] = request.form['name']
     session['dojo_location'] = request.form['dojo_location']
