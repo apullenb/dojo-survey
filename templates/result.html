@@ -9,9 +9,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container bg-dark text-white mx-auto my-4 p-4 rounded">
-        <h1 class="text-decoration-underline">Submitted Info</h1>
-        <table class="table text-white">
+    <div class="container bg-light mx-auto my-5 p-5">
+        <h1>Submitted Info</h1>
+        <table class="table">
           <tr>
             <td>Name:</td>
             <td>{{session['name']}}</td>
@@ -30,7 +30,7 @@
           </tr>
         </table>
         <form action="/destroy_session">
-          <button class="btn bg-warning" type="submit">Go Back</button>
+          <button class="btn bg-info" type="submit">Start Over</button>
         </form>
       </div>
 </body>
